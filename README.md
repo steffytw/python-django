@@ -113,13 +113,13 @@ To run a Django app on localhost
 
   python 2:
 
-
-        ```
-            python manage.py run server
-        ```
+```
+  	python manage.py run serve
+	
+```
 
    python 3:
-
-         ```
-            python3 manage.py run server
-         ```
+```
+  	python3 manage.py run serve
+	
+```
