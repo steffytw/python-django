@@ -5,6 +5,7 @@ Django is a high-level Python Web framework that encourages rapid development an
 
 - Step 1 Download [Python](https://www.python.org/downloads/)
 - Step 2 Install pip
+- Step 3 Create a folder for django project
 
     python 2:
     ```
