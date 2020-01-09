@@ -5,7 +5,6 @@ Django is a high-level Python Web framework that encourages rapid development an
 
 - Step 1 Download [Python](https://www.python.org/downloads/)
 - Step 2 Install pip
-- Step 3 Create a folder for django project
 
     python 2:
     ```
@@ -16,8 +15,9 @@ Django is a high-level Python Web framework that encourages rapid development an
     sudo apt install python3-pip
     ```
     
--Step 3 Create a folder for django project
--Step 4 Create a virtual environment
+- Step 3  Create a folder for django project
+- Step 4  Create a virtual environment
+
  python 2:
  ```
 pip install virtualenv
@@ -31,14 +31,20 @@ pip3 install virtualenv
 python3 -m virtualenv nameofthevirtualenv
 
 ```
--Step 5 install Django
+- Step 5  Install Django
 
-
+python 2:
 ```
 pip install django
 
 ```
--Step 6 Create django project
+python 3:
+```
+pip3 install django
+
+```
+
+- Step 6  Create django project
 ```
 django-admin startproject projectname .
 
@@ -47,13 +53,14 @@ django-admin startproject projectname .
 To run a Django project on localhost
 
    python 2:
+   
     
-    ```
+```
     python manage.py run server
-    ```
+```
     
    python 3:
     
-    ```
+ ```
     python3 manage.py run server
-    ```
+ ```
