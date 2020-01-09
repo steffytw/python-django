@@ -60,7 +60,7 @@ for example app name as myNewapp
 ```
 python manage.py startapp myNewapp
 ```
-- Step 2  Go to settings.py file in the djangoProject1 and update the installed apps with the created app name.
+- Step 2  Go to settings.py file in the djangoProject1 folder and update the installed apps with the created app name.
 
 ```
 INSTALLED_APPS = [
@@ -74,8 +74,38 @@ INSTALLED_APPS = [
 ]
 
 ```
+- Step 3 After this go to urls.py file in the djangoProject1 folder
+
+```
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('myNewapp/',include('myNewapp.urls')),
+]
+```
+- Step 4 Create a urls.py file in the myNewapp.
+
+```
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('home/',views.home,name = 'home'),
+]
+```
+
+- Step 5 create a view in the view.py file 
 
 
+```
+# Create your views here.
+
+def home(request):
+	return HttpResponse('HELLO WORLD')
+
+```
 
 
 # Run an app :
