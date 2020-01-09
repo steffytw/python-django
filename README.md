@@ -45,6 +45,7 @@ Django is a high-level Python Web framework that encourages rapid development an
             ```
 
 - Step 6  Create django project
+
             ```
             django-admin startproject projectname .
 
