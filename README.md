@@ -1,7 +1,7 @@
 # python-django
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It's free and open source. 
 
-# Django Installation:
+# Django Installation and project creation:
 
 - Step 1 Download [Python](https://www.python.org/downloads/)
 - Step 2 Install pip
@@ -46,21 +46,49 @@ Django is a high-level Python Web framework that encourages rapid development an
 
 - Step 6  Create django project
 
-            ```
-            django-admin startproject projectname .
+for example, project name as djangoProject1
 
             ```
-# Run an app 
-To run a Django project on localhost
+            django-admin startproject djangoProject1 .
 
-           python 2:
+            ```
+
+# Django app creation steps:
+- Step 1  Create django app 
+
+for example app name as myNewapp
+```
+python manage.py startapp myNewapp
+```
+- Step 2  Go to settings.py file in the djangoProject1 and update the installed apps with the created app name.
+
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myNewapp',
+]
+
+```
+
+
+
+
+# Run an app :
+To run a Django app on localhost
+
+  python 2:
 
 
         ```
             python manage.py run server
         ```
 
-           python 3:
+   python 3:
 
          ```
             python3 manage.py run server
