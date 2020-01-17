@@ -9,8 +9,8 @@ def home(request):
 	return render(request,'myNewapp/home.html',{'content':context})
 
 def display(request):
-	students = student.objects.all[:5]
-	return render(request,'display.html',{'students':student})
+	students = student.objects.all()
+	return render(request,'myNewapp/display.html',{'students':students})
 
 
 	

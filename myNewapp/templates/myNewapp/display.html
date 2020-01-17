@@ -1,4 +1,19 @@
 {% for student in students  %}
-{{student:name}}
-{{student:age}}
-{{student:address}}
+<table>
+    <tr>
+        <td><label>Name:</label></td>
+        <td>{{student.name}}</td>
+    </tr>
+    <tr>
+        <td><label>Age:</label></td>
+        <td>{{student.age}}</td>
+    </tr>
+    <tr>
+        <td><label>Address:</label></td>
+        <td>{{student.address}}</td>
+    </tr>
+</table>
+
+<br>
+<hr>
+{% endfor%}
