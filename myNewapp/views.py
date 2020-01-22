@@ -37,4 +37,12 @@ def createdata(request):
 
 def createstudent(request):
 	form =studentForm()
+	if request.method == "POST":
+		form = studentForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return HttpResponse("form submitted")
+		else:
+			return HttpResponse(form.errors)
+
 	return render(request,'myNewapp/studentform.html',{'form':form})

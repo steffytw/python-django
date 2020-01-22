@@ -1,6 +1,6 @@
-<form action="actionform.html" method="POST">
+<form action="{% url 'createstudent' %}" method="POST">
     {% csrf_token %}
     <table>{{form}}</table>
-    <button style="margin-left: 100px;background-color: green;">submit</button>
+    <input type="submit" value="submit" style="margin-left: 100px;background-color:green;"/>
     
 </form>
