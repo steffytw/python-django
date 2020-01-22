@@ -1,5 +1,5 @@
 {% for student in students  %}
-<table>
+<!-- <table>
     <tr>
         <td><label>Name:</label></td>
         <td>{{student.name}}</td>
@@ -15,5 +15,6 @@
 </table>
 
 <br>
-<hr>
+<hr> -->
+<a href="/details/{{student.id}}">{{student.name}}</a>
 {% endfor%}

@@ -9,7 +9,7 @@ class student(models.Model):
     age = models.IntegerField()
     address = models.TextField()
 
-    class meta:
+    class Meta:
         verbose_name_plural="student_dtails"
     def __str__(self):
         return self.name+" "+str(self.age)
