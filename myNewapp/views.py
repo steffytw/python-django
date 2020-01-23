@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from . models import  student
-from . forms import studentForm
+from . models import  student,signupformsData
+from . forms import studentForm,signupForm
 
 # Create your views here.
 
@@ -46,3 +46,22 @@ def createstudent(request):
 			return HttpResponse(form.errors)
 
 	return render(request,'myNewapp/studentform.html',{'form':form})
+
+
+def signup(request):
+	form = signupForm()
+	if request.method == "POST":
+		form = signupForm(request.POST)
+		if form.is_valid():
+			name = form.cleaned_data['name']
+			username = form.cleaned_data['username']
+			screen_name = form.cleaned_data['screen_name']
+			address = form.cleaned_data['address']
+			password = form.cleaned_data['password']
+			signup1 = signupformsData()
+			signup1.name = name
+			signup1.save()
+			return HttpResponse("form submitted")
+		else:
+			return HttpResponse(form.errors)
+	return render(request,'myNewapp/signupform.html',{'form':form})
