@@ -24,30 +24,22 @@ Django is a high-level Python Web framework that encourages rapid development an
 - Step 3  Create a folder for django project
 - Step 4  Create a virtual environment
 
-     
-   python 2:
-   
-             ```
-	     
-	     
-            pip install virtualenv
-            python -m virtualenv nameofthevirtualenv
+  python 2:
 
+```
+  	pip install virtualenv
+        python -m virtualenv nameofthevirtualenv
+	
+```
 
+   python 3:
+```
+  	pip3 install virtualenv
+        python3 -m virtualenv nameofthevirtualenv
+	
+```
 
-            ```
-	    
-     python3:
-
-             ```
-	     
-	     
-            pip3 install virtualenv
-            python3 -m virtualenv nameofthevirtualenv
-
-
-
-            ```
+  
 - Step 5  Install Django
 
      python 2:
