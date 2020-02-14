@@ -9,13 +9,21 @@ Django is a high-level Python Web framework that encourages rapid development an
      python 2:
      
             ```
+	    
             sudo apt install python-pip
+	    
+	    
             ```
 	    
      python 3:
      
+     
+     
             ```
+	   
             sudo apt install python3-pip
+	    
+	    
             ```
     
 - Step 3  Create a folder for django project
@@ -25,16 +33,24 @@ Django is a high-level Python Web framework that encourages rapid development an
    python 2:
    
              ```
+	     
+	     
             pip install virtualenv
             python -m virtualenv nameofthevirtualenv
+
+
 
             ```
 	    
      python3:
 
              ```
+	     
+	     
             pip3 install virtualenv
             python3 -m virtualenv nameofthevirtualenv
+
+
 
             ```
 - Step 5  Install Django
