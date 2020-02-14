@@ -14,7 +14,7 @@ Django is a high-level Python Web framework that encourages rapid development an
 	
 ```
 
-   python 3:
+  python 3:
 ```
   	sudo apt install python3-pip
 	
@@ -32,7 +32,7 @@ Django is a high-level Python Web framework that encourages rapid development an
 	
 ```
 
-   python 3:
+  python 3:
 ```
   	pip3 install virtualenv
         python3 -m virtualenv nameofthevirtualenv
@@ -50,7 +50,7 @@ Django is a high-level Python Web framework that encourages rapid development an
 	
 ```
 
-   python 3:
+  python 3:
 ```
   	pip3 install django
 	
