@@ -1,4 +1,4 @@
-# python-django
+# Django
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It's free and open source. 
 
 # Django Installation and project creation:
@@ -42,28 +42,30 @@ Django is a high-level Python Web framework that encourages rapid development an
   
 - Step 5  Install Django
 
-     python 2:
-     
-            ```
-            pip install django
 
-            ```
-	    
-     python 3:
-     
-            ```
-            pip3 install django
+  python 2:
 
-            ```
+```
+  	pip install django
+	
+```
+
+   python 3:
+```
+  	pip3 install django
+	
+```
+
 
 - Step 6  Create django project
 
 for example, project name as djangoProject1
 
-            ```
-            django-admin startproject djangoProject1 .
+```
+  	django-admin startproject djangoProject1 .
+	
+```
 
-            ```
 
 # Django app creation steps:
 - Step 1  Create django app 
