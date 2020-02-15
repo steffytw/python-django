@@ -137,12 +137,12 @@ To run a Django app on localhost
   python 2:
 
 ```
-  	python manage.py run serve
+  	python manage.py runserve
 	
 ```
 
    python 3:
 ```
-  	python3 manage.py run serve
+  	python3 manage.py runserve
 	
 ```
