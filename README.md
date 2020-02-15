@@ -120,7 +120,16 @@ def home(request):
 	return HttpResponse('HELLO WORLD')
 
 ```
+# Migrations
 
+Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema. They’re designed to be mostly automatic, but you’ll need to know when to make migrations, when to run them, and the common problems you might run into.
+
+
+```
+python manage.py makemigrations
+python manage.py migrate
+
+```
 
 # Run an app :
 To run a Django app on localhost
