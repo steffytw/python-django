@@ -38,9 +38,26 @@ Django is a high-level Python Web framework that encourages rapid development an
         python3 -m virtualenv nameofthevirtualenv
 	
 ```
+if python version 2 and 3 are installed in your system then we can set the virtual environment using the command given below:
 
-  
-- Step 5  Install Django
+```
+	virtualenv --python=python3 venv
+```
+
+- Step 5  Activate the virtual environment
+linux:
+
+```
+	source nameofthevirtualenv/bin/activate
+
+```
+windows:
+
+```
+	nameofthevirtualenv\Scripts\activate
+
+```
+- Step 6  Install Django
 
 
   python 2:
@@ -57,7 +74,7 @@ Django is a high-level Python Web framework that encourages rapid development an
 ```
 
 
-- Step 6  Create django project
+- Step 7  Create django project
 
 for example, project name as djangoProject1
 
